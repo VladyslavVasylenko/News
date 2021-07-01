@@ -1,4 +1,4 @@
 # News
 Block news 
 
-  - need Use bootstrap 5 and adaptive.
+  - need use bootstrap 5 and adaptive.
