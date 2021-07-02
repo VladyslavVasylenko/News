@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./style/style.css">
   <title>News</title>
 </head>
 <body>
   <header class="header">
-    <div class="header__container">
+    <div class="header__container" id="tabs">
       <ul class="list">
         <li class="item">
           <a href="#Farms" class="link">Sale of Farms.com</a>
@@ -38,8 +40,8 @@
     </div>
   </header>
 
-  <main>
-    <div id="Agro">
+  <main class="tabs-items">
+    <div id="Agro container">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <img src="./image/png/Frame-logo.png" alt="Sale of Farms" class="navbar-brand">
@@ -51,32 +53,38 @@
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto mb-2">
               <li class="nav-item">
-                <a href="" class="nav-link">Головна</a>
+                <a href="#" class="nav-link">Головна</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Каталог</a>
+                <a href="#" class="nav-link">Каталог</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Послуги</a>
+                <a href="#" class="nav-link">Послуги</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Відгуки</a>
+                <a href="#" class="nav-link">Відгуки</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Новини</a>
+                <a href="#News" class="nav-link active-link">Новини</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">FAQ</a>
+                <a href="#" class="nav-link">FAQ</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">Контакти</a>
+                <a href="#" class="nav-link">Контакти</a>
               </li>
             </ul>
           </div>
 
-          <form action="" class="d-flex">
-            <input type="search" class="forms-control mr-2">
-          </form>
+          <div class="search-wrap">
+            <form action="" class="d-flex">
+              <input type="search" placeholder="Пошук" class="search-input forms-control mr-2">
+            </form>
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" class="search-btn" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.9744 14.617L20.5501 18.1919C20.9407 18.5824 20.9404 19.2159 20.5499 19.6065C20.1593 19.9971 19.5258 19.9973 19.1353 19.6067L15.5604 16.031C13.9671 17.3082 11.9854 18.0029 9.94336 18C4.97536 18 0.943359 13.968 0.943359 9C0.943359 4.032 4.97536 0 9.94336 0C14.9114 0 18.9434 4.032 18.9434 9C18.9463 11.042 18.2516 13.0237 16.9744 14.617ZM14.9684 13.875C16.2375 12.5699 16.9462 10.8204 16.9434 9C16.9434 5.132 13.8104 2 9.94336 2C6.07536 2 2.94336 5.132 2.94336 9C2.94336 12.867 6.07536 16 9.94336 16C11.7638 16.0029 13.5132 15.2941 14.8184 14.025L14.9684 13.875Z" fill="#202020"/>
+              </svg>                
+          </div>
+
 
           <div class="conteiner-star">
             <svg width="24" height="23" viewBox="0 0 24 23" fill="none" class="star"
@@ -85,13 +93,130 @@
               </svg>
           </div>
 
-          <button>Увійти</button>
+          <button class="users">Увійти</button>
         </div>
       </nav>
+
+      <div class="news">
+        <div class="container">
+          <div class="news__sub-nav">
+            <svg width="16" height="14" class="news__icon-home" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.667 13.9998H3.33366C3.15685 13.9998 2.98728 13.9295 2.86225 13.8045C2.73723 13.6795 2.66699 13.5099 2.66699 13.3331V7.33312H0.666992L7.55166 1.07445C7.6744 0.962769 7.83438 0.900879 8.00033 0.900879C8.16627 0.900879 8.32625 0.962769 8.44899 1.07445L15.3337 7.33312H13.3337V13.3331C13.3337 13.5099 13.2634 13.6795 13.1384 13.8045C13.0134 13.9295 12.8438 13.9998 12.667 13.9998ZM8.66699 12.6664H12.0003V6.10445L8.00033 2.46845L4.00033 6.10445V12.6664H7.33366V8.66645H8.66699V12.6664Z" fill="#606060"/>
+              </svg>
+            <h5 class="news__sub-title">&#183; Новини</h5>
+          </div>
+  
+          <h1 class="news__title">Новини</h1>
+
+          <ul class="news-serch__list">
+            <li class="news-serch__item">
+              <a href="#" class="news-serch__link">Україна</a>
+            </li>
+
+            <li class="news-serch__item">
+              <a href="#" class="news-serch__link">Купівля-Продаж</a>
+            </li>
+
+            <li class="news-serch__item">
+              <a href="#" class="news-serch__link">Законодавство</a>
+            </li>
+
+            <li class="news-serch__item">
+              <a href="#" class="news-serch__link">Ринок землі</a>
+            </li>
+
+            <li class="news-serch__item">
+              <a href="#" class="news-serch__link">Податки</a>
+            </li>
+          </ul>
+  
+          <div class="news__gallery d-flex">
+            <div class="container__block">
+              <img src="./image/jpeg/image1.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">В Україні пропонують запровадити перехідний період для встановлення ринкової вартості землі</h4>
+            </div>
+  
+            <div class="container__block">
+              <img src="./image/jpeg/imagee2.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">Рада врегулювала питання оренди землі при купівлі нерухомості</h4>
+            </div>
+
+            <div class="container__block">
+              <img src="./image/jpeg/image3.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">Відтягування земельної реформи призведе до значних втрат для України, – Лещенко</h4>
+            </div>
+
+            <div class="container__block">
+              <img src="./image/jpeg/imagee4.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">Стало відомо, коли і скільки сплачувати земельного податку у 2021 році</h4>
+            </div>
+
+            <div class="container__block">
+              <img src="./image/jpeg/image5.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">Півроку до відкриття ринку: скільки коштуватиме з 1 липня українська земля</h4>
+            </div>
+
+            <div class="container__block">
+              <img src="./image/jpeg/image6.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">Як правильно продати нерухомість: вивчаємо конкурентів</h4>
+            </div>
+
+            <div class="container__block">
+              <img src="./image/jpeg/image7.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">Топ 5 фейлових ділянок, які були виявлені під час перевірок</h4>
+            </div>
+
+            <div class="container__block">
+              <img src="./image/jpeg/imagee8.jpg" alt="Wheat field">
+              <p class="news__date">24.06.19, 09:01</p>
+              <h4 class="news__heading">Які банки дають кредит під заставу землі</h4>
+            </div>
+          </div>
+
+          <ol class="page">
+            <li class="page__item">1</li>
+            <li class="page__item">2</li>
+            <li class="page__item">3</li>
+            <li class="page__item">4</li>
+            <li class="page__item">
+              <svg width="20" height="20" viewBox="0 0 20 20"  class="page__dots" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="3.33366" cy="10.0002" rx="1.66667" ry="1.66667" />
+              <circle cx="9.99967" cy="10.0002" r="1.66667"/>
+              <ellipse cx="16.6667" cy="10.0002" rx="1.66667" ry="1.66667" />
+              </svg>
+            </li>
+            <li class="page__item">12</li>
+            <li class="page__item">
+              <svg width="8" height="12" viewBox="0 0 8 12" class="page__arrow" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.97656 5.99989L0.851562 1.87489L2.0299 0.696554L7.33323 5.99989L2.0299 11.3032L0.851562 10.1249L4.97656 5.99989Z"/>
+              </svg>
+            </li>
+          </ol>
+
+        </div>
+      </div>
     </div>
 
+    <!-- <div  class="tabs-item" id="Farm">
+      <p>Farm</p>
+    </div>
+
+    <div  class="tabs-item" id="Ground">
+      <p>Ground</p>
+    </div> -->
   </main>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> -->
   <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <!-- <script src="./menu.js"></script> -->
 </body>
 </html>
