@@ -12,38 +12,43 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__container" id="tabs">
-      <ul class="list">
-        <li class="item">
-          <a href="#Farms" class="link">Sale of Farms.com</a>
-        </li>
-        <li class="item">
-          <a href="#Agro" class="link active">Агропідприємства</a>
-        </li>
-        <li class="item">
-          <a href="#Ground" class="link">Земельні ділянки</a>
-        </li>
-      </ul>
+      <div class="header__container" id="tabs">
+        <ul class="list">
+          <li class="item">
+            <a href="#Farms" class="link">Sale of Farms.com</a>
+          </li>
+          <li class="item">
+            <a href="#Agro" class="link active">Агропідприємства</a>
+          </li>
+          <li class="item">
+            <a href="#Ground" class="link">Земельні ділянки</a>
+          </li>
+        </ul>
 
-      <p><a href="tel:+380 67 215 82 00" class="mobl">+380 67 215 82 00</a></p>
-      <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="mail">mail@saleoffarms.com</a></p>
+        <p>
+          <a href="tel:+380 67 215 82 00" class="mobl">+380 67 215 82 00</a>
+        </p>
 
-      <select id="lang" class="lang">
-        <option value="/uk/">Укр.</option>
-        <option value="/ru/">Рус.</option>
-        <option value="/en/">Eng.</option>
-        <option value="/es/">Esp.</option>
-        <option value="/de/">Deu.</option>
-        <option value="/it/">Ita.</option>
-        <option value="/nl/">Ned.</option>
-      </select>
-    </div>
+        <p>
+          <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" class="mail">mail@saleoffarms.com</a>
+        </p>
+
+        <select id="lang" class="lang">
+          <option value="/uk/">Укр.</option>
+          <option value="/ru/">Рус.</option>
+          <option value="/en/">Eng.</option>
+          <option value="/es/">Esp.</option>
+          <option value="/de/">Deu.</option>
+          <option value="/it/">Ita.</option>
+          <option value="/nl/">Ned.</option>
+        </select>
+      </div>
   </header>
 
   <main class="tabs-items">
     <div id="Agro container">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
+        <div class="container nav-container">
           <img src="./image/png/Frame-logo.png" alt="Sale of Farms" class="navbar-brand">
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
@@ -76,24 +81,25 @@
             </ul>
           </div>
 
-          <div class="search-wrap">
-            <form action="" class="d-flex">
-              <input type="search" placeholder="Пошук" class="search-input forms-control mr-2">
-            </form>
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" class="search-btn" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.9744 14.617L20.5501 18.1919C20.9407 18.5824 20.9404 19.2159 20.5499 19.6065C20.1593 19.9971 19.5258 19.9973 19.1353 19.6067L15.5604 16.031C13.9671 17.3082 11.9854 18.0029 9.94336 18C4.97536 18 0.943359 13.968 0.943359 9C0.943359 4.032 4.97536 0 9.94336 0C14.9114 0 18.9434 4.032 18.9434 9C18.9463 11.042 18.2516 13.0237 16.9744 14.617ZM14.9684 13.875C16.2375 12.5699 16.9462 10.8204 16.9434 9C16.9434 5.132 13.8104 2 9.94336 2C6.07536 2 2.94336 5.132 2.94336 9C2.94336 12.867 6.07536 16 9.94336 16C11.7638 16.0029 13.5132 15.2941 14.8184 14.025L14.9684 13.875Z" fill="#202020"/>
+          <div class="nav-second-container">
+            <div class="search-wrap">
+              <form action="" class="d-flex">
+                <input type="search" placeholder="Пошук" class="search-input forms-control mr-2">
+              </form>
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" class="search-btn" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.9744 14.617L20.5501 18.1919C20.9407 18.5824 20.9404 19.2159 20.5499 19.6065C20.1593 19.9971 19.5258 19.9973 19.1353 19.6067L15.5604 16.031C13.9671 17.3082 11.9854 18.0029 9.94336 18C4.97536 18 0.943359 13.968 0.943359 9C0.943359 4.032 4.97536 0 9.94336 0C14.9114 0 18.9434 4.032 18.9434 9C18.9463 11.042 18.2516 13.0237 16.9744 14.617ZM14.9684 13.875C16.2375 12.5699 16.9462 10.8204 16.9434 9C16.9434 5.132 13.8104 2 9.94336 2C6.07536 2 2.94336 5.132 2.94336 9C2.94336 12.867 6.07536 16 9.94336 16C11.7638 16.0029 13.5132 15.2941 14.8184 14.025L14.9684 13.875Z" fill="#202020"/>
               </svg>                
+            </div>
+  
+            <div class="conteiner-star">
+              <svg width="24" height="23" viewBox="0 0 24 23" fill="none" class="star"
+              xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.9433 18.26L4.89027 22.208L6.46527 14.28L0.530273 8.792L8.55727 7.84L11.9433 0.5L15.3293 7.84L23.3563 8.792L17.4213 14.28L18.9963 22.208L11.9433 18.26Z" fill="#DFDFDF"/>
+                </svg>
+            </div>
+  
+            <button class="users">Увійти</button>
           </div>
-
-
-          <div class="conteiner-star">
-            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" class="star"
-            xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.9433 18.26L4.89027 22.208L6.46527 14.28L0.530273 8.792L8.55727 7.84L11.9433 0.5L15.3293 7.84L23.3563 8.792L17.4213 14.28L18.9963 22.208L11.9433 18.26Z" fill="#DFDFDF"/>
-              </svg>
-          </div>
-
-          <button class="users">Увійти</button>
         </div>
       </nav>
 
@@ -132,56 +138,54 @@
   
           <div class="news__gallery d-flex">
             <div class="container__block">
-              <img src="./image/jpeg/image1.jpg" alt="Wheat field">
+              <img src="./image/jpeg/image1.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">В Україні пропонують запровадити перехідний період для встановлення ринкової вартості землі</h4>
             </div>
   
             <div class="container__block">
-              <img src="./image/jpeg/imagee2.jpg" alt="Wheat field">
+              <img src="./image/jpeg/imagee2.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">Рада врегулювала питання оренди землі при купівлі нерухомості</h4>
             </div>
 
             <div class="container__block">
-              <img src="./image/jpeg/image3.jpg" alt="Wheat field">
+              <img src="./image/jpeg/image3.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">Відтягування земельної реформи призведе до значних втрат для України, – Лещенко</h4>
             </div>
 
             <div class="container__block">
-              <img src="./image/jpeg/imagee4.jpg" alt="Wheat field">
+              <img src="./image/jpeg/imagee4.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">Стало відомо, коли і скільки сплачувати земельного податку у 2021 році</h4>
             </div>
 
             <div class="container__block">
-              <img src="./image/jpeg/image5.jpg" alt="Wheat field">
+              <img src="./image/jpeg/image5.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">Півроку до відкриття ринку: скільки коштуватиме з 1 липня українська земля</h4>
             </div>
 
             <div class="container__block">
-              <img src="./image/jpeg/image6.jpg" alt="Wheat field">
+              <img src="./image/jpeg/image6.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">Як правильно продати нерухомість: вивчаємо конкурентів</h4>
             </div>
 
             <div class="container__block">
-              <img src="./image/jpeg/image7.jpg" alt="Wheat field">
+              <img src="./image/jpeg/image7.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">Топ 5 фейлових ділянок, які були виявлені під час перевірок</h4>
             </div>
 
             <div class="container__block">
-              <img src="./image/jpeg/imagee8.jpg" alt="Wheat field">
+              <img src="./image/jpeg/imagee8.jpg" alt="Wheat field" class="news__image">
               <p class="news__date">24.06.19, 09:01</p>
               <h4 class="news__heading">Які банки дають кредит під заставу землі</h4>
             </div>
 
             <div class="container__block">
-              
-              
               <h4 class="news__headings">Які банки дають кредит під заставу землі</h4>
             </div>
           </div>
