@@ -397,6 +397,20 @@
   padding-top: 16px;
 }
 
+.news__link {
+  text-decoration: none;
+}
+
+.container__block:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px #00000033;
+          box-shadow: 0 5px 10px #00000033;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  padding-top: 0px;
+}
+
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,6 +436,7 @@
   list-style-type: none;
   padding-top: 3px;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .page__item:hover {
